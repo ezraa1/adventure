@@ -14,5 +14,11 @@ post3 = Post.create(date: "22-9-2022", title:" Do You Believe In Ghosts?", conte
 post4 = Post.create(date: "5-9-2022", title:" Night Photography: Tips and Tricks", content:"You really need a camera that is capable of taking a long exposure. These days some phones can do that. I don’t know how well long exposures on phones turn out as I have never personally experimented with it.", author_id: author4.id)
 post5 = Post.create(date: "30-9-2022", title:" Travel Because it is fun!", content:"Adventure with us on our ten day road trip through Norway! Set aside twenty minutes, maybe next time you're on the toilet and watch it because you will not want to miss it for the scenery alone.", author_id: author5.id)
 
+# Comment seeding
+comment1 = Comment.create(comment: "Amazing!", post_id: post.id)
+comment2 = Comment.create(comment: "Joining!", post_id: post.id)
+comment3 = Comment.create(comment: "This is awesome!", post_id: post.id)
+comment4 = Comment.create(comment: "I fear this!", post_id: post.id)
+comment5 = Comment.create(comment: "I like fun too!", post_id: post.id)
 
 puts "✅ Done seeding!"

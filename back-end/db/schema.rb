@@ -10,10 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_06_091522) do
+ActiveRecord::Schema.define(version: 2022_09_06_101127) do
 
   create_table "authors", force: :cascade do |t|
     t.string "name"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string "text"
+    t.integer "post_id"
   end
 
   create_table "posts", force: :cascade do |t|
