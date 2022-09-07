@@ -1,9 +1,20 @@
-import React from 'react';
+import React from "react";
 
 
-function New(){
+
+function New({title, content, author}){
+
+
     return(
-        <div></div>
+        <div>
+     
+           <h3>{title}</h3> 
+            <p>{content}</p>
+            <h4>{author}</h4>
+
+            
+        </div>
     )
 }
+
 export default New;
