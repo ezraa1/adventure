@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function Home({title, content, author}){
-    fetch("http://localhost:9292/comments")
+    fetch("http://localhost:9292/posts")
     .then((r) => r.json())
     .then((data) => console.log(data));
 
