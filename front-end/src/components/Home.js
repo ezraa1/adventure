@@ -15,9 +15,7 @@ function Home({title, content, author}){
 
 return(
     <div>
-   {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
-  <button>remove</button>
-  </New>)) }
+  
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
@@ -25,8 +23,12 @@ return(
         <Card.Text>
         {content}
         </Card.Text>
+        {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+  
+  </New>)) }
         <Button variant="primary">Read More</Button>
       </Card.Body>
+      
     </Card>
     </div>
 )
