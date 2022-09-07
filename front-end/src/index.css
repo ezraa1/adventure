@@ -14,8 +14,8 @@ code {
 
 /* styling navbar */
 .navb{
-  background-color: rgb(177, 84, 122);
-  padding-bottom: 20px;
+  background-color: rgb(100, 177, 84);
+  padding-bottom: 40px;
   padding-top: 3px;
   box-shadow: 5px 10px 18px white ;
 }
