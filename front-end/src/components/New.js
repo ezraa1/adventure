@@ -1,5 +1,5 @@
 import React from "react";
-
+import NewForm from "./NewForm";
 
 
 function New({title, content, author}){
@@ -11,7 +11,7 @@ function New({title, content, author}){
            <h3>{title}</h3> 
             <p>{content}</p>
             <h4>{author}</h4>
-
+<NewForm/>
             
         </div>
     )
