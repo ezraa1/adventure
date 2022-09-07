@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { useState } from "react";
+import New from "./New";
 
 function Home({title, content, author}){
+    const [posts, setPosts]= useState([])
+    useEffect (() => {
     fetch("http://localhost:9292/posts")
     .then((r) => r.json())
-    .then((data) => console.log(data));
+    .then((posts) => setPosts(posts));
+    }, [])
+    
 
 return(
+    <div>
+   {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+  <button>remove</button>
+  </New>)) }
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
@@ -18,6 +28,7 @@ return(
         <Button variant="primary">Read More</Button>
       </Card.Body>
     </Card>
+    </div>
 )
 }
 export default Home;
