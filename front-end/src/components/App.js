@@ -3,9 +3,10 @@ import Navbar from './Navbar';
 import { Routes, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
-import New from "./New";
+
 import Home from "./Home";
 import Header from "./Header";
+
 
 function App(){
 
@@ -19,7 +20,7 @@ function App(){
         <Route  path="/contact"element={< Contact />} />
           
         
-        <Route  path="/new"element={< New />} /> 
+        {/* <Route  path="/new"element={< New />} />  */}
          
         <Route  path="/home"element={< Home />} />
 
