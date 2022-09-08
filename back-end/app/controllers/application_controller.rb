@@ -11,6 +11,17 @@ class ApplicationController < Sinatra::Base
     posts.to_json
     
   end
+
+  post "/posts" do
+    post= Post.create(
+      date: params[:date],
+      title: params[:title],
+      content: params[:content],
+      author_id: params[:author_id]
+    )
+
+
+end
   get "/comments" do
     comments = Comment.all
     comments.to_json
