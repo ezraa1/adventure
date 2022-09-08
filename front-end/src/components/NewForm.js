@@ -1,6 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Home from './Home';
 
-function NewForm(){
+function NewForm({onSubmission}){
+    const[newPostForm, setNewPostForm]= useState({title:"", content:"",author:""})
+    
+
+
+
+;
+
+    function handleOnChange(event){
+        event.preventDefault()
+        setNewPostForm(newPostForm=>({...newPostForm,[event.target.name]: event.target.value}))
+        }
+
+        function handleSubmit(event){
+            event.preventDefault()
+            onSubmission(newPostForm)
+            setNewPostForm({title:"",content:"", author:""} )
+           return <Home />
+            
+        }
 
     return(
         <div>
