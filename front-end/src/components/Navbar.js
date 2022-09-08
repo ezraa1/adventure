@@ -5,7 +5,9 @@ function Navbar(){
 
     return(
         <div className="navb">
+        
             <ul>
+            <NavLink to= "/" ><h3>Adventure Stories</h3></NavLink>
                 <li><NavLink to="/about" style={({ isActive }) => ({
               color: isActive ? '' : '#545e6f',
               background: isActive ? '#f0f0f0' : '',
@@ -27,13 +29,15 @@ function Navbar(){
               borderRadius: '40px',
               padding: '4px'
             })} >New </NavLink></li>
-                <li><NavLink to="/"  style={({ isActive }) => ({
+                <li><NavLink to="/home"  style={({ isActive }) => ({
               color: isActive ? '' : '#545e6f',
               background: isActive ? '#f0f0f0' : '',
               textDecoration: 'none',
               borderRadius: '40px',
               padding: '4px'
             })} >Home </NavLink></li>
+
+
             </ul>
         </div>
     )
