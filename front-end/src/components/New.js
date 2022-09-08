@@ -11,9 +11,10 @@ function New({title, content, author}){
            <h3>{title}</h3> 
             <p>{content}</p>
             <h4>{author}</h4>
-<NewForm/>
+            <NewForm/>
             
         </div>
+        
     )
 }
 

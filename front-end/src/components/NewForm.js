@@ -10,7 +10,8 @@ function NewForm(){
                 Author<br></br>
                 <input name='author'></input><br></br>
                 Content<br></br>
-                <textarea name='content' rows={10}></textarea>
+                <textarea name='content' rows={10}></textarea><br></br>
+                <input type="submit" value="Post" />
             </form>
         </div>
     )
