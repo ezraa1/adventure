@@ -22,20 +22,79 @@ function Home({title, content, author}){
 return(
     <div className="hmm">
     {show ? posts : null} 
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>
-        {content}
-        </Card.Text>
-        {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+    <div className="row row-cols-1 row-cols-md-3">
+    <div className="col mb-4">
+    <div class="card h-100">
+    <div className="card">
+      {/* <img src="adv1.jpg" class="card-img-top" alt="..."> */}
+      <div className="card-body">
+        <h5 className="card-title"> {title}</h5>
+        <p className="card-text">{content}</p>
+      </div>
+      {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
   
   </New>)) }
-        <Button variant="primary">Read More</Button>
-      </Card.Body>
+    </div>
+    </div>
+  </div>
+        {/* {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+  
+  </New>)) } */}
+        
+     
       
-    </Card>
+    
+    
+
+    <div className="col mb-4">
+    <div class="card h-100">
+    <div className="card">
+      {/* <img src="..." class="card-img-top" alt="..."> */}
+      <div className="card-body">
+      <h5 className="card-title"> {title}</h5>
+        <p className="card-text">{content}</p>
+      </div>
+      {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+  
+  </New>)) }
+    </div>
+    </div>
+  </div>
+
+  <div className="col mb-4">
+  <div class="card h-100">
+    <div className="card">
+      {/* <img src="..." class="card-img-top" alt="..."> </img> */}
+      <div className="card-body">
+      <h5 className="card-title"> {title}</h5>
+        <p className="card-text">{content}</p>
+      </div>
+      {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+  
+  </New>)) }
+    </div>
+    </div>
+  </div>
+
+  <div className="col mb-4">
+  <div class="card h-100">
+    <div className="card">
+      {/* <img src="..." class="card-img-top" alt="..."> </img> */}
+      <div className="card-body">
+      <h5 className="card-title"> {title}</h5>
+        <p className="card-text">{content}</p>
+      </div>
+      {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+  
+  </New>)) }
+    </div>
+    </div>
+  </div>
+
+   {/* {posts.map((posts)=>(<New key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+  
+  </New>)) } */}
+    </div>
     </div>
 )
 }
