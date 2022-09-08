@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("adv.jpg" );
+  background-size:200vh;
+  background-repeat: no-repeat;
 }
 
 code {
@@ -17,11 +20,20 @@ code {
   background-color: rgb(100, 177, 84);
   padding-bottom: 40px;
   padding-top: 3px;
-  box-shadow: 5px 10px 18px white ;
+  /* box-shadow: 5px 10px 18px white ; */
 }
 .navb li {
   float:right;
   display: inline;
   padding-right: 20px;
   text-decoration: none;
+}
+.navb ul h3 {
+  text-decoration: none;
+  
+}
+
+.hmm{
+  background-color: white;
+  
 }
