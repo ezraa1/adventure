@@ -5,17 +5,23 @@ import { useState } from "react";
 import New from "./New";
 
 function Home({title, content, author}){
+   
     const [posts, setPosts]= useState([])
+    const [show, setShow] = useState(false);
+    
     useEffect (() => {
     fetch("http://localhost:9292/posts")
     .then((r) => r.json())
     .then((posts) => setPosts(posts));
     }, [])
     
+    function handleClick(){
+        setShow(show=>!show)
+      }
 
 return(
-    <div>
-  
+    <div className="hmm">
+    {show ? posts : null} 
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>

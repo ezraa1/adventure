@@ -5,11 +5,13 @@ import About from "./About";
 import Contact from "./Contact";
 import New from "./New";
 import Home from "./Home";
+import Header from "./Header";
 
 function App(){
 
   return(
     <div>
+    
     <Navbar/>
     <Routes>
      <Route  path="/about"element={< About />} />
@@ -19,7 +21,9 @@ function App(){
         
         <Route  path="/new"element={< New />} /> 
          
-        <Route  path="/"element={< Home />} />
+        <Route  path="/home"element={< Home />} />
+
+        <Route  path="/"element={< Header />} />
         
          
         </Routes>
