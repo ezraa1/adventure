@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from "react";
+// import React, {useEffect, useState} from "react";
 
-import Post from "./Post"
-import PostDelete from "./PostDelete";
+// import Post from "./Post"
+// import PostDelete from "./PostDelete";
 
-function PostsContainer(){
-    const [posts, setPosts]= useState([])
+// function PostsContainer(){
+//     const [posts, setPosts]= useState([])
 
    
 
@@ -12,17 +12,17 @@ function PostsContainer(){
 
 
 
-    return(
-        <div>
+//     return(
+//         <div>
 
-{posts.map((posts)=>(<Post key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
+// {posts.map((posts)=>(<Post key={posts.id} title={posts.title} content={posts.content} author = {posts.author} >
     
-  </Post>)) }
+//   </Post>)) }
   
         
       
-  </div>
-    )
-}
+//   </div>
+//     )
+// }
 
-export default PostsContainer;
+// export default PostsContainer;
