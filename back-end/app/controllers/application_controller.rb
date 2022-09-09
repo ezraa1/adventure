@@ -23,8 +23,8 @@ post.to_json
 
 end
 
-delete "/posts/ :id" do
-  post= Post.find(params[:id])
+delete "/posts/:id" do
+  post = Post.find(params[:id])
   post.destroy
   post.to_json
 end
