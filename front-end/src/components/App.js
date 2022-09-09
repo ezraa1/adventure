@@ -6,6 +6,7 @@ import Contact from "./Contact";
 
 import Home from "./Home";
 import Header from "./Header";
+import PostsContainer from './PostsContainer';
 
 
 function App(){

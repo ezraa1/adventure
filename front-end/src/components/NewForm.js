@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Home from './Home';
 
 function NewForm({onSubmission}){
-    const[newPostForm, setNewPostForm]= useState({title:"", content:"",author:""})
+    const[newPostForm, setNewPostForm]= useState({title:"", content:"", author:""})
     
 
     function handleOnChange(event){
@@ -14,7 +14,7 @@ function NewForm({onSubmission}){
             event.preventDefault()
             onSubmission(newPostForm)
             setNewPostForm({title:"",content:"", author:""} )
-           return <Home />
+           
             
         }
 
