@@ -6,7 +6,7 @@ import Contact from "./Contact";
 
 import Home from "./Home";
 import Header from "./Header";
-import PostsContainer from './PostsContainer';
+import New from "./New";
 
 
 function App(){
@@ -21,7 +21,7 @@ function App(){
         <Route  path="/contact"element={< Contact />} />
           
         
-        {/* <Route  path="/new"element={< New />} />  */}
+        <Route  path="/new"element={< New />} /> 
          
         <Route  path="/home"element={< Home />} />
 
