@@ -19,9 +19,16 @@ class ApplicationController < Sinatra::Base
       content: params[:content],
       author_id: params[:author_id]
     )
-
+post.to_json
 
 end
+
+delete "/posts/ :id" do
+  post= Post.find(params[:id])
+  post.destroy
+  post.to_json
+end
+
   get "/comments" do
     comments = Comment.all
     comments.to_json
