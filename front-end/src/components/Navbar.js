@@ -7,7 +7,7 @@ function Navbar(){
         <div className="navb">
         
             <ul>
-            <NavLink to= "/" ><h3>Adventure Stories</h3></NavLink>
+            <NavLink to= "/" ><h3>Adventures </h3></NavLink>
                 <li><NavLink to="/about" style={({ isActive }) => ({
               color: isActive ? '' : '#545e6f',
               background: isActive ? '#f0f0f0' : '',
