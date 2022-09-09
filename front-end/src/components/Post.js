@@ -2,9 +2,9 @@ import React from "react";
 
 
 
-function Post({title, content, author}){
+function Post({title, content, author,onDeletePost}){
 
-
+    
     return(
         <div>
      
