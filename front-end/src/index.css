@@ -33,11 +33,21 @@ code {
   
 }
 
-.hmm{
-  background-color: white;
+.card{
+  border: none;
+  
   
 }
+.card-header{
+  border:none;
+}
+
+
+
+
+
 
 .dlt button{
   color: red;
 }
+
