@@ -1,6 +1,8 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
+
+  
   # Add your routes here
   get "/authors" do
     authors = Author.all
@@ -33,6 +35,13 @@ end
     comments = Comment.all
     comments.to_json
   end
+post "/comments" do 
+  comment = Comment.create(
+    text: params[:text],
+    post_id: params[:post_id]
+  )
+  
 
+end
 end
 
