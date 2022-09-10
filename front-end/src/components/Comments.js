@@ -5,7 +5,19 @@ function Comments({onSubmission}){
     const [text, setText] = useState('');
     const [displayText, setDisplayText] = useState('');
     const[newCommentForm, setNewCommentForm]= useState({text:""})
-   
+    const [isSending, setIsSending] = useState(false);
+    const [show, setShow] = useState(false);
+    
+    function handleClick(){
+        setIsSending(isSending=>!isSending)
+      }
+
+    function handleOnChange(event){
+        event.preventDefault()
+        // setText(event.target.value)
+        setNewCommentForm(newCommentForm=>({...newCommentForm,[event.target.name]: event.target.value}))
+        }
+
         function handleSubmit(event){
             event.preventDefault()
             setIsSending(true);
