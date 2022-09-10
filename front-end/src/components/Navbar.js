@@ -7,7 +7,13 @@ function Navbar(){
         <div className="navb">
         
             <ul>
-            <NavLink to= "/" ><h3>Adventures </h3></NavLink>
+            <NavLink to= "/"  style={({ isActive }) => ({
+              color: isActive ? '' : '#545e6f',
+              background: isActive ? '#f0f0f0' : '',
+              textDecoration: 'none',
+              borderRadius: '40px',
+              padding: '4px'
+            })} ><h3 >Adventure Blog Posts </h3></NavLink>
                 <li><NavLink to="/about" style={({ isActive }) => ({
               color: isActive ? '' : '#545e6f',
               background: isActive ? '#f0f0f0' : '',
