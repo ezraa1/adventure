@@ -14,7 +14,7 @@ function Comments({onSubmission}){
 
     function handleOnChange(event){
         event.preventDefault()
-        // setText(event.target.value)
+        setText(event.target.value)
         setNewCommentForm(newCommentForm=>({...newCommentForm,[event.target.name]: event.target.value}))
         }
 

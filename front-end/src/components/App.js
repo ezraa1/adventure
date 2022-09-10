@@ -30,7 +30,7 @@ function App(){
          
         </Routes>
 
-        <h1>Hello people</h1>
+        
         {/* <Comments currentUserId="1"/> */}
 
 </div>
