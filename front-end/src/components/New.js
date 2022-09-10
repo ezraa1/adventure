@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import NewForm from './NewForm';
-
+import Comment from './Comment';
 function New(){
     const [posts, setPosts] =useState([])
     function handleNewPost(newFormData){
@@ -20,6 +20,7 @@ function New(){
 
     return(
  <div>
+ 
 <NewForm onSubmission={handleNewPost}/>
  </div>
 

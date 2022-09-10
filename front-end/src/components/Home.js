@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import NewForm from "./NewForm";
 import Post from "./Post";
 import PostDelete from "./PostDelete";
+import Comment from "./Comment";
 
 const Card = (props) => {
   return (  
@@ -9,6 +10,7 @@ const Card = (props) => {
       <a href={props.data.url}><h5 className="card-header">{props.data.title}</h5></a>
       <img className="image" src="adv1.jpg" alt="alt message"></img>
       <div className="card-body">{props.data.content}
+      <Comment/>
         {/* <h4 className="card-title">{props.data.title}</h4> */}
       </div>
     </div>
@@ -49,13 +51,14 @@ function handleClick(){
     posts.splice(id,1);
     }
     setPosts([...posts])
+    console.log(posts)
       }
 
        return(
-        <div>
+        <div >
         
         {cardData(posts)}
-    <div>
+    
         <PostDelete
                                  key={posts.id}
                                  posts={posts}
@@ -63,7 +66,7 @@ function handleClick(){
          
                               />
                               
-  </div>
+  
 <div>
 
       {/* <button onClick={handleClick} >{show? "Close":"Create "} Post</button><br></br> */}
