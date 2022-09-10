@@ -28,13 +28,14 @@ code {
   padding-right: 20px;
   text-decoration: none;
 }
-.navb ul h3 {
-  text-decoration: none;
-  
-}
+
+
+/* styling home */
 
 .card{
-  border: none;
+  /* border: black;
+  box-shadow: 5px 10px 13px black; */
+
   
   
 }
