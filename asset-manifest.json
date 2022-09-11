@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ezraa1/adventure/static/css/main.afab52be.css",
-    "main.js": "/ezraa1/adventure/static/js/main.a8a1385f.js",
-    "static/js/787.22edae46.chunk.js": "/ezraa1/adventure/static/js/787.22edae46.chunk.js",
-    "static/media/nikon.jpg": "/ezraa1/adventure/static/media/nikon.f5208e9f5d0de88c806f.jpg",
-    "static/media/comp.jpg": "/ezraa1/adventure/static/media/comp.3b52a5ce24157b9c346a.jpg",
-    "index.html": "/ezraa1/adventure/index.html",
-    "main.afab52be.css.map": "/ezraa1/adventure/static/css/main.afab52be.css.map",
-    "main.a8a1385f.js.map": "/ezraa1/adventure/static/js/main.a8a1385f.js.map",
-    "787.22edae46.chunk.js.map": "/ezraa1/adventure/static/js/787.22edae46.chunk.js.map"
+    "main.css": "/adventure/static/css/main.6534d5d6.css",
+    "main.js": "/adventure/static/js/main.98b407d7.js",
+    "static/js/787.22edae46.chunk.js": "/adventure/static/js/787.22edae46.chunk.js",
+    "static/media/nikon.jpg": "/adventure/static/media/nikon.f5208e9f5d0de88c806f.jpg",
+    "static/media/comp.jpg": "/adventure/static/media/comp.3b52a5ce24157b9c346a.jpg",
+    "index.html": "/adventure/index.html",
+    "main.6534d5d6.css.map": "/adventure/static/css/main.6534d5d6.css.map",
+    "main.98b407d7.js.map": "/adventure/static/js/main.98b407d7.js.map",
+    "787.22edae46.chunk.js.map": "/adventure/static/js/787.22edae46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afab52be.css",
-    "static/js/main.a8a1385f.js"
+    "static/css/main.6534d5d6.css",
+    "static/js/main.98b407d7.js"
   ]
 }
