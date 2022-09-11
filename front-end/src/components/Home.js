@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import NewForm from "./NewForm";
-import Post from "./Post";
 import PostDelete from "./PostDelete";
 import Comment from "./Comment";
 
@@ -18,7 +16,7 @@ const Card = (props) => {
       <div className="card-body">{props.data.content}
       
       <Comment/>
-        {/* <h4 className="card-title">{props.data.title}</h4> */}
+        
       
       </div>
     </div>
@@ -67,29 +65,16 @@ function handleClick(){
       }
 
        return(
-        <div >
-        
-        {cardData(posts)}
-    
-        
-       { <PostDelete
+        <div className="row" >
+        {cardData(posts)} 
+        <PostDelete 
                                  key={posts.id}
                                  posts={posts}
                                 onDeleteClick={handleDeleteClick}
-         
-                              />}     
+                                
+                              />  
+                               
   
-<div>
-
-      {/* <button onClick={handleClick} >{show? "Close":"Create "} Post</button><br></br> */}
-      {/* {show ? <NewForm onSubmission={handleNewPost} />: null} */}
-     
-      </div>
-      <footer id="footer">
-          <p>infor@adventures.co.ke</p>
-          <p>Designed by : Ezra Kipchirchir</p>
-          <p>contact : +254706103204</p>
-</footer>
 		
  
       </div>

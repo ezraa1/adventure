@@ -11,7 +11,8 @@ function PostDelete({posts, onDeleteClick}) {
       }
   return (
     <div className="dlt">
-        <button  onClick={handleDeleteClick} > Delete</button>
+    
+        <button  onClick={handleDeleteClick} > Delete post!</button>
       </div>
   )
 }
