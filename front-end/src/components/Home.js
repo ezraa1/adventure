@@ -7,22 +7,25 @@ import Comment from "./Comment";
 const Card = (props) => {
   return ( 
    
-
+<div class="row">
+  <div class="col-md-8" >
     <div className="shadow p-3 mb-5 bg-white rounded">
     <div className="card">
     <div class="card-body">
 
-      <a href={props.data.url}><h5 className="card-header">{props.data.title}</h5></a>
-      <img className="image" src="adv1.jpg" alt="alt message"></img>
+      <a href={props.data.src}><h5 className="card-header">{props.data.title}</h5></a>
+      <img className="image" src={props.data.image} alt="alt message"></img>
       <div className="card-body">{props.data.content}
       
       <Comment/>
         {/* <h4 className="card-title">{props.data.title}</h4> */}
+      
       </div>
     </div>
     </div>
     </div>
-    
+    </div>
+    </div>
   )
 }
 
@@ -60,7 +63,7 @@ function handleClick(){
     posts.splice(id,1);
     }
     setPosts([...posts])
-    
+    console.log(posts)
       }
 
        return(
@@ -68,13 +71,13 @@ function handleClick(){
         
         {cardData(posts)}
     
-        <PostDelete
+        
+       { <PostDelete
                                  key={posts.id}
                                  posts={posts}
                                 onDeleteClick={handleDeleteClick}
          
-                              />
-                              
+                              />}     
   
 <div>
 
@@ -82,7 +85,12 @@ function handleClick(){
       {/* {show ? <NewForm onSubmission={handleNewPost} />: null} */}
      
       </div>
-     
+      <footer id="footer">
+          <p>infor@adventures.co.ke</p>
+          <p>Designed by : Ezra Kipchirchir</p>
+          <p>contact : +254706103204</p>
+</footer>
+		
  
       </div>
     )
