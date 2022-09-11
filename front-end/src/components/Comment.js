@@ -19,7 +19,7 @@ import Comments from "./Comments";
             body:JSON.stringify(newCommentData
             )
             }
-            fetch('http://localhost:9292/comments', serverOptions)
+            fetch('https://advent1121.herokuapp.com/comments', serverOptions)
             .then(r=>r.json())
             .then(addedComment=>setComment(comments=>[...comments, addedComment]))
 			

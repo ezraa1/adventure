@@ -13,7 +13,7 @@ function New(){
             body:JSON.stringify(newFormData
             )
             }
-            fetch('http://localhost:9292/posts', serverOptions)
+            fetch('https://advent1121.herokuapp.com/posts', serverOptions)
             .then(r=>r.json())
             .then(addedPost=>setPosts(posts=>[...posts, addedPost]))
         }

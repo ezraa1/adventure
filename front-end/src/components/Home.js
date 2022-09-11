@@ -39,7 +39,7 @@ const [posts, setPosts] =useState([])
 
 const [show, setShow] = useState(false);
 useEffect(() => {
-  fetch('http://localhost:9292/posts' )
+  fetch('https://advent1121.herokuapp.com/posts' )
     .then((r) => r.json())
     .then((posts) => setPosts(posts));
     
@@ -51,7 +51,7 @@ function handleClick(){
 
  
   function handleDeleteClick(id) {
-    fetch(`http://localhost:9292/posts/${posts.id}`, {
+    fetch(`https://advent1121.herokuapp.com/posts/${posts.id}`, {
 		  method: "DELETE",
 		})
 		.then((r) => r.json())
