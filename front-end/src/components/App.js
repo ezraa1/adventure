@@ -31,7 +31,18 @@ function App(){
         </Routes>
 
         
-        {/* <Comments currentUserId="1"/> */}
+        
+        <div className="par">
+        
+       <p>Life Is too important to be taken seriously...</p> 
+
+       <p><h2>JOIN US AND ADVENTURE!</h2></p>
+       </div>
+       <footer id="footer">
+          <p>infor@adventures.co.ke <i class="fa fa-envelope"></i></p>
+          <p>Designed by : Ezra Kipchirchir <i class="fa fa-user-circle"></i></p>
+          <p>contact : +254706103204 <i class="fa fa-phone"></i></p>
+</footer>
 
 </div>
 
