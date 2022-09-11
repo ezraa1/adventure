@@ -22,6 +22,7 @@ function New(){
  <div>
  
 <NewForm onSubmission={handleNewPost}/>
+
  </div>
 
     )

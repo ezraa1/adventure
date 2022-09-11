@@ -19,7 +19,7 @@ function NewForm({onSubmission}){
         }
 
     return(
-        <div>
+        <div className="new">
         
             <form onSubmit={handleSubmit}>
             Title<br></br>
