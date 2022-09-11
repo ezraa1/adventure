@@ -5,9 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("adv.jpg" );
+  /* background-image: url("adv.jpg" );
   background-size:200vh;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  margin: 2%;
 }
 
 code {
@@ -17,9 +18,10 @@ code {
 
 /* styling navbar */
 .navb{
-  background-color: rgb(100, 177, 84);
+  background-color: #83BD75;
   padding-bottom: 40px;
   padding-top: 3px;
+  margin-bottom: 2%;
   /* box-shadow: 5px 10px 18px white ; */
 }
 .navb li {
@@ -35,7 +37,8 @@ code {
 .card{
   /* border: black;
   box-shadow: 5px 10px 13px black; */
-
+background-color: #B4E197;
+border: none;
   
   
 }
@@ -43,12 +46,20 @@ code {
   border:none;
 }
 
-
-
+.row{
+  justify-content: center;
+  background-color: #E9EFC0;
+  border: none;
+}
+.row .image{
+  height: 50%;
+}
 
 
 
 .dlt button{
   color: red;
 }
-
+footer{
+  background-color: #83BD75;
+}
