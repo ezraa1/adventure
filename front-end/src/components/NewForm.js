@@ -27,7 +27,7 @@ function NewForm({onSubmission}){
                 Author<br></br>
                 <input onChange={handleOnChange} name='author' value={newPostForm.author}></input><br></br>
                 Content<br></br>
-                <textarea onChange={handleOnChange} name='content'  value={newPostForm.content} rows={10} ></textarea><br></br>
+                <textarea onChange={handleOnChange} name='content'  value={newPostForm.content} rows={10}  ></textarea><br></br>
                 <input type="submit" value="Publish" />
 
             </form>
