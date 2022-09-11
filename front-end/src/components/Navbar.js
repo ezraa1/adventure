@@ -2,18 +2,22 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar(){
-  
+ 
     return(
         <div className="navb">
         
             <ul>
+           
             <NavLink to= "/"  style={({ isActive }) => ({
               color: isActive ? '' : '#545e6f',
               background: isActive ? '#f0f0f0' : '',
               textDecoration: 'none',
-              borderRadius: '40px',
-              padding: '4px'
-            })} ><h3 >Adventure Blog Posts </h3></NavLink>
+              // borderRadius: '40px',
+              paddingTop: '4px'
+              
+              
+            })}  ><h3 >Adventure Blog Posts </h3></NavLink>
+            
                 <li><NavLink to="/about" style={({ isActive }) => ({
               color: isActive ? '' : '#545e6f',
               background: isActive ? '#f0f0f0' : '',

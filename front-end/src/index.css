@@ -5,10 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url("adv.jpg" );
-  background-size:200vh;
-  background-repeat: no-repeat; */
-  margin: 2%;
+  background-image: url("comp.jpg" ); 
+   background-size:200vh;
+  background-repeat: no-repeat; 
+   
 }
 
 code {
@@ -16,13 +16,14 @@ code {
     monospace;
 }
 
+@media only screen and (min-width: 600px){
 /* styling navbar */
 .navb{
   background-color: #83BD75;
   padding-bottom: 40px;
   padding-top: 3px;
   margin-bottom: 2%;
-  /* box-shadow: 5px 10px 18px white ; */
+  box-shadow: 5px 10px 18px white ;
 }
 .navb li {
   float:right;
@@ -55,11 +56,68 @@ border: none;
   height: 50%;
 }
 
+/* form styling */
+.new{
+  /* justify-content: center; */
+ 
+ 
+  padding-left: 200px;
+  background-image: url("nikon.jpg");
+  background-repeat: no-repeat;
+  background-size: 200vh;
+}
+}
 
+@media only screen and (min-width: 600px){
+.par{
+  text-align: center;
+  margin-top: 3%;
+}
+.par h2{
+  text-shadow: 2px 2px #83BD75;
+}
+/* style contact */
+.contact{
+  color: #1C6758;
+}
+.contact i {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 2%;
+  font-size: 250%;
+  color: #83BD75;
+}
+ i:hover{
+box-shadow: 5px 10px 13px #E9EFC0 ;
+border-radius: 40px;
+}
+
+/* style about */
+.abt {
+color: #4E944F;
+
+}
+.abt h2{
+  color: #EC7272;
+}
+.abt h5{
+  text-align: center;
+  text-shadow:2px 1px black  ;
+}
 
 .dlt button{
   color: red;
+  margin-bottom: 5%;
+  margin-left: 60%;
+  border: 2px 2px red;
+  border-radius: 4px;
 }
 footer{
-  background-color: #83BD75;
+  background-color:  #B4E197;
+  margin-top: 10%;
+  border-radius: 20px;
+}
+ footer p{
+  margin-left: 5%;
+ }
 }
