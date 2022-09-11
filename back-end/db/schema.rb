@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_06_101127) do
+ActiveRecord::Schema.define(version: 2022_09_10_154712) do
 
   create_table "authors", force: :cascade do |t|
     t.string "name"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2022_09_06_101127) do
     t.string "title"
     t.text "content"
     t.integer "author_id"
+    t.string "image"
   end
 
 end
